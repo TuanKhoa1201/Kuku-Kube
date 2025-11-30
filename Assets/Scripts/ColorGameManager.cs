@@ -77,24 +77,6 @@ public class ColorGameManager : MonoBehaviour
             scoreText.text = "SCORE: " + score;
     }
 
-    // void UpdateCellSize()
-    // {
-    //     GridLayoutGroup gridLayout = gridParent.GetComponent<GridLayoutGroup>();
-    //     RectTransform gridRect = (RectTransform)gridParent;
-
-    //     float spacing = 10f;
-    //     float width = gridRect.rect.width;
-    //     float height = gridRect.rect.height;
-
-    //     float cellWidth = (width - (gridSize - 1) * spacing) / gridSize;
-    //     float cellHeight = (height - (gridSize - 1) * spacing) / gridSize;
-
-    //     gridLayout.cellSize = new Vector2(cellWidth, cellHeight);
-    //     gridLayout.spacing = new Vector2(spacing, spacing);
-    //     gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
-    //     gridLayout.constraintCount = gridSize;
-    // }
-
     void UpdateCellSize()
     {
         GridLayoutGroup grid = gridParent.GetComponent<GridLayoutGroup>();
